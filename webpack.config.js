@@ -35,6 +35,17 @@ module.exports = {
         ]
       },
       {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'url-loader?name=/src/images/[name].[hash].[ext]',
+            options: {
+              limit: 8192
+            }
+          }
+        ]
+      },
+      {
         test: /\.scss$/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',

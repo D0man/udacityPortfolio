@@ -72,6 +72,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__styles_sass_misc_scss__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__styles_sass_misc_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__styles_sass_misc_scss__);
 
+document.addEventListener("DOMContentLoaded", function () {
+  const menuButton = document.querySelector('#menu-btn');
+  const menuList = document.querySelector('#menu-list');
+
+  menuButton.addEventListener('click', function () {
+    this.classList.toggle('navigation__button--open');
+    menuList.classList.toggle('navigation__list--open');
+  });
+});
 
 /***/ }),
 /* 1 */

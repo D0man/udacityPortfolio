@@ -5,12 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jakub Domański Junior Front-end developer</title>
+    <style>
+    body {
+      background-color: purple;
+    }
+    .container {
+        max-width: 1200px;
+        width: 100%;
+        margin: auto;
+        border: 1px solid black;
+}</style>
     <link rel="stylesheet" href="./src/styles/main.css">
 </head>
 <body>
     <header class="header container">
         <nav class="navigation container">
-            <button id="menu-btn" class="navigation__button">Menu <span>=</span></button>
+            <button id="menu-btn" class="navigation__button">
+                Menu
+                <span class="navigation__bars"></span>
+                <span class="navigation__bars"></span>
+                <span class="navigation__bars"></span>
+            </button>
             <ul id="menu-list" class="navigation navigation__list">
                 <li class="navigation__item navigation__item--active">Logo</li>
                 <li class="navigation__item"><a>About</a></li>
@@ -21,7 +36,10 @@
             </ul>
         </nav>
         <h1 class="header__title">Jakub Domanski - Junior Front-end</h1>
-        <p>I <span>love</span><span><span>html css js vue</span></span></p>
+        <p>I <span>love&nbsp;</span>
+        <div class="header__slider">
+            <span id="first-slide">html</span><span>css</span><span>js</span><span>vue</span></div>
+        </p>
     </header>
     <section class="about container">
         <h2>About me</h2>
