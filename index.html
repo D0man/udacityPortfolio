@@ -6,19 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jakub Domański Junior Front-end developer</title>
     <style>
-    body {
-      background-color: purple;
-    }
-    .container {
-        max-width: 1200px;
-        width: 100%;
-        margin: auto;
-        border: 1px solid black;
-}</style>
+        body {
+        background-color:#00000082;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            max-width: 1200px;
+            width: 100%;
+            margin: auto;
+        }
+    </style>
     <link rel="stylesheet" href="./src/styles/main.css">
 </head>
 <body>
-    <header class="header container">
+    <header id="header" class="header container">
         <nav class="navigation container">
             <button id="menu-btn" class="navigation__button">
                 Menu
@@ -27,40 +30,85 @@
                 <span class="navigation__bars"></span>
             </button>
             <ul id="menu-list" class="navigation navigation__list">
-                <li class="navigation__item navigation__item--active">Logo</li>
-                <li class="navigation__item"><a>About</a></li>
-                <li class="navigation__item"><a>Projects</a></li>
-                <li class="navigation__item"><a>Skills</a></li>
-                <li class="navigation__item"><a>Experience</a></li>
-                <li class="navigation__item"><a>Contact</a></li>
+                <li class="navigation__item navigation__item"><a class="navigation__item--link" href="#header">Logo</a></li>
+                <li class="navigation__item"><a class="navigation__item--link" href="#about">About</a></li>
+                <li class="navigation__item"><a class="navigation__item--link" href="#projects">Projects</a></li>
+                <!-- <li class="navigation__item"><a class="navigation__item--link" href="#skills">Skills</a></li>
+                <li class="navigation__item"><a class="navigation__item--link" href="#experience">Experience</a></li>
+                <li class="navigation__item"><a class="navigation__item--link" href="#contact">Contact</a></li> -->
             </ul>
         </nav>
-        <h1 class="header__title">Jakub Domanski - Junior Front-end</h1>
-        <p>I <span>love&nbsp;</span>
-        <div class="header__slider">
-            <span id="first-slide">html</span><span>css</span><span>js</span><span>vue</span></div>
-        </p>
+        <div class="header__container">
+            <h1 class="header__title">Jakub Domanski - Junior Front-end</h1>
+            <div>I <span>love&nbsp;</span>
+                <div class="header__slider">
+                    <span id="first-slide">html</span><span>css</span><span>js</span><span>vue</span>
+                </div>
+            </div>
+        </div>
     </header>
-    <section class="about container">
-        <h2>About me</h2>
+    <section id="about" class="about container">
+        <h2 class="section__title">About me</h2>
+        <p class="about__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum blanditiis
+            necessitatibus ab deserunt accusantium odit provident, consectetur doloremque,
+            quod magni laborum vero quo labore quia in expedita quam ullam totam.
+        </p>
+        <p class="about__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum blanditiis
+                necessitatibus ab deserunt accusantium odit provident, consectetur doloremque,
+                quod magni laborum vero quo labore quia in expedita quam ullam totam.
+            </p>
+            <p class="about__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum blanditiis
+                    necessitatibus ab deserunt accusantium odit provident, consectetur doloremque,
+                    quod magni laborum vero quo labore quia in expedita quam ullam totam.
+                </p>
     </section>
-    <section class="projects container">
-            <h2>Proejcts</h2>
-        <div class="project__box">Placeholder</div>
-        <div class="project__box">Placeholder</div>
-        <div class="project__box">Placeholder</div>
+    <section id="projects" class="projects container">
+        <h2 class="section__title">Proejcts</h2>
+        <div class="projects__wrraper">
+            <div class="projects__box">
+                    <a><img src="http://via.placeholder.com/300x150"></a>
+                    <p>Project name</p>
+                    <p>Project description</p>
+            </div>
+            <div class="projects__box">
+                    <a><img src="http://via.placeholder.com/300x150"></a>
+                    <p>Project name</p>
+                    <p>Project description</p>
+            </div>
+            <div class="projects__box">
+                    <a><img src="http://via.placeholder.com/300x150"></a>
+                    <p>Project name</p>
+                    <p>Project description</p>
+            </div>
+        </div>
     </section>
-    <section class="skills container">
-        <h2>Skills</h2>
-        <div class="skills_box">skill1</div>
-        <div class="skills_box">skill2</div>
-        <div class="skills_box">skill3</div>
-    </section>
-    <section class="experience container">
-        <h2>experience</h2>       
-     </section>
-     <section class="contact container">
-            <h2>Contact</h2>       
+    <section id="skills" class="skills container">
+        <h2 class="section__title">Skills</h2>
+        <div class="projects__wrraper">
+            <div class="skills_box">
+                <img src="http://via.placeholder.com/100x100">
+                <p>Html</p>
+            </div>
+            <div class="skills_box">
+                <img src="http://via.placeholder.com/100x100">
+                <p>CSS</p>
+            </div>
+            <div class="skills_box">
+                <img src="http://via.placeholder.com/100x100">
+                <p>JS</p>
+            </div>
+            <div class="skills_box">
+                <img src="http://via.placeholder.com/100x100">
+                <p>Vue.js</p>
+            </div>
+            <div class="skills_box">
+                <img src="http://via.placeholder.com/100x100">
+                <p>React</p>
+            </div>
+        </div>
     </section>
     <footer id="footer" class="footer container">
         <p class="footer__paragraph">&copy;2018 Jakub Domański </p>

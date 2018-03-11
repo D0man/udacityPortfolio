@@ -5,6 +5,10 @@ document.addEventListener("DOMContentLoaded",function(){
 
   menuButton.addEventListener('click', function(){
     this.classList.toggle('navigation__button--open');
-    menuList.classList.toggle('navigation__list--open')
+    menuList.classList.toggle('navigation__list--open');
+  });
+  menuList.addEventListener('click', function(){
+    menuButton.classList.remove('navigation__button--open');
+    this.classList.remove('navigation__list--open');
   });
 });

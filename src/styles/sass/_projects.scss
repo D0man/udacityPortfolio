@@ -1,0 +1,22 @@
+.projects__wrraper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+
+  @media screen and(min-width: 800px) {
+    justify-content: space-between;
+  }
+}
+
+.projects__box {
+  width: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.skills_box {
+  margin: 25px 0;
+  width: 100px;
+  text-align: center;
+}

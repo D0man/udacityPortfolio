@@ -1,5 +1,19 @@
+@import "reset.scss";
 @import "header.scss";
+@import "projects.scss";
 
 html {
   font-size: 10px;
+}
+
+body {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.section__title {
+  margin-top: 50px;
+  font-size: 2rem;
+  text-align: center;
 }
