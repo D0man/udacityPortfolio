@@ -85,6 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
     this.classList.remove('navigation__list--open');
   });
 });
+// TODO add slider on header
 
 /***/ }),
 /* 1 */

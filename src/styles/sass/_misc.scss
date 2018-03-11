@@ -2,6 +2,15 @@
 @import "header.scss";
 @import "projects.scss";
 
+.container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+}
+
 html {
   font-size: 10px;
 }
